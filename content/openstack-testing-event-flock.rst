@@ -2,6 +2,7 @@ OpenStack testing Event @Flock
 ##############################
 :date: 2013-07-29 11:48
 :author: mrunge
+:tags: Fedora, OpenStack
 :category: Fedora, OpenStack
 :slug: openstack-testing-event-flock
 

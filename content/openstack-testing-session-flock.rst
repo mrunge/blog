@@ -3,6 +3,7 @@ OpenStack testing session @FLOCK
 :date: 2013-05-18 13:17
 :author: mrunge
 :category: Fedora, OpenStack
+:tags: Fedora, OpenStack
 :slug: openstack-testing-session-flock
 
 As you might heard, we at Fedora had FUDCons (Fedora Users and

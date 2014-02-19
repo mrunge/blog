@@ -2,6 +2,7 @@ OpenStack Summit Hong Kong
 ##########################
 :date: 2013-11-12 19:54
 :author: mrunge
+:tags: OpenStack
 :category: OpenStack
 :slug: openstack-summit-hong-kong
 

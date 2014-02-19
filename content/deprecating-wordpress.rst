@@ -3,6 +3,7 @@ Using pelican for serving this blog
 :date: 2014-02-19 15:40
 :author: mrunge
 :category: fedora
+:tags: Fedora
 :slug: deprecating-wordpress
 
 For my own blog, I recently deprecated wordpress, in favor of using pelican. 
