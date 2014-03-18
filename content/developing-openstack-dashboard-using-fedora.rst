@@ -27,6 +27,7 @@ great for me, no rocket science and no engineering master required.
 
 | This will get the source code from github, will create a new directory
 named horizon, and change to that directory.
+
 |  ``./manage.py runserver``
 
 starts Django's built in development server on your host, per default on
