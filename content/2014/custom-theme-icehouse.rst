@@ -6,7 +6,7 @@ A stable and custom theme for Horizon
 :tags: OpenStack
 :slug: custom-theme-for-horizon
 
-During the OpenStack Icehouse development cycle, we got in Horizon the
+During the OpenStack Icehouse development cycle, we gained in Horizon the
 ability to use additional python packages by simply dropping in a file
 in the ``openstack_dashboard/enabled`` dir. 
 

@@ -5,9 +5,9 @@ Booting Fedora 20 TC4 on Wandboard Quad
 :category: Fedora
 :slug: booting-fedora-20-tc4-on-wandboard-quad
 
-| Lately, I got a shiny new `Wandboard`_ Quad into my fingers, and it's 
+Lately, I got a shiny new `Wandboard`_ Quad into my fingers, and it's 
 "enabled hardware" on Fedora 20. I took a TC4 test build
-|  from http://koji.fedoraproject.org/koji/taskinfo?taskID=5896895:
+from http://koji.fedoraproject.org/koji/taskinfo?taskID=5896895:
 
 ::
 
@@ -61,9 +61,9 @@ Finally, we'd need to update the UUID of the root partition:<
 will report the name of the partition and the UUID, which we'd need to
 insert to the kernel append line in extlinux.conf
 
-| Insert the SDCard to the card reader directly below the heat sink,
+Insert the SDCard to the card reader directly below the heat sink,
 connect your serial console, and wait.
-|  Probably, you'd need to type boot, when you're dropped to the uboot
+Probably, you'd need to type boot, when you're dropped to the uboot
 prompt.
 
 .. _Wandboard: http://wandboard.org

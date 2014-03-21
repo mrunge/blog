@@ -17,15 +17,15 @@ required in any case, it just runs on plain Fedora. I simply followed
 the instructions provided for `Fedora's test day`_, and they worked
 great for me, no rocket science and no engineering master required.
 
-| Additionally I installed git and git-review (as root):
+Additionally I installed git and git-review (as root):
 |  ``yum -y install git git-review``
-|  then go to the location where you want to put the code, for me that's
+then go to the location where you want to put the code, for me that's
 |  ``cd ~/work``
 
-| and execute
+and execute
 |  ``git clone https://github.com/openstack/horizon.git && cd horizon``
 
-| This will get the source code from github, will create a new directory
+This will get the source code from github, will create a new directory
 named horizon, and change to that directory.
 
 |  ``./manage.py runserver``

@@ -50,8 +50,7 @@ Append the following lines to that file
     7 directories, 9 files
 
 | Those .py files just need to be empty files.
-|  The magic is in ``_stylesheets.html``, it's basically a modified copy
-of file ``openstack_dashboard/templates/_stylesheets.html``:
+|  The magic is in ``_stylesheets.html``, it's basically a modified copy of file ``openstack_dashboard/templates/_stylesheets.html``:
 
 ::
 
