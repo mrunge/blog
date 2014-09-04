@@ -7,7 +7,7 @@ Horizon's new features introduced in Juno cycle
 :slug: horizon-juno-cycle-features
 :status: draft
 
-This post intends to give an overview on what happened during Horizons
+This post intends to give an overview on what happened during Horizon's
 Juno development cycle. Horizon's `blueprints page on launchpad`_ lists 31 
 implemented new features. They may be grouped into a few larger features.
 
@@ -17,9 +17,9 @@ Apache Hadoop is a widely adopted MapReduce implementation. The aim of the
 Sahara project is to enable users to easily provision and manage Hadoop 
 clusters on OpenStack.
 
-During Juno development cycle, the independant Sahara dashboard was merged into
-Horizon. Like all other features in Horizon, it will be shown, when Sahara is
-configured through Keystone.
+During the Juno development cycle, the independent Sahara dashboard was merged 
+into Horizon. Like all other features in Horizon, it will be shown, when 
+Sahara is configured through Keystone.
 
 RBAC
 ----
@@ -28,7 +28,7 @@ Horizon-2014.1 aka Icehouse version has support for RBAC for Glance and Cinder.
 For example, create, access, or delete images can be limited on user
 or role basis. 
 In Juno this RBAC system was extended to support `compute`_, `network`_, and 
-`provisioning`_.
+`orchestration`_.
 
 JavaScript unbundling
 ---------------------
@@ -46,7 +46,9 @@ Horizon was originally intended as a framework to enable the development
 of a dashboard, like the now well known OpenStack Dashboard, which is 
 widely known under the name Horizon.
 
-Other projects could use, Horizon's framework as well. There is a blueprint
+However, the Horizon framework is generic and could be used by other projects 
+outside of OpenStack. It is useful to build a dashboard based on
+RESTful services. There is a blueprint
 described on launchpad, to `separate horizon from openstack dashboard`_. To 
 enable this feature, JavaScript libraries need to become separate as well.
 
@@ -70,6 +72,6 @@ and Neutron subnets.
 .. _`blueprints page on launchpad`: https://blueprints.launchpad.net/horizon/juno
 .. _`compute`: https://blueprints.launchpad.net/horizon/+spec/compute-rbac
 .. _`network`: https://blueprints.launchpad.net/horizon/+spec/network-rbac
-.. _`provisioning`: https://blueprints.launchpad.net/horizon/+spec/heat-rbac
+.. _`orchestration`: https://blueprints.launchpad.net/horizon/+spec/heat-rbac
 .. _`Fedora`: https://fedoraproject.org/wiki/Packaging:No_Bundled_Libraries
 .. _`separate horizon from openstack dashboard`: https://blueprints.launchpad.net/horizon/+spec/separate-horizon-from-dashboard
