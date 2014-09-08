@@ -1,11 +1,10 @@
 Horizon's new features introduced in Juno cycle
 ###############################################
-:date: 2014-09-03 13:55
+:date: 2014-09-08 13:20
 :author: mrunge
 :category: OpenStack
 :tags: OpenStack
 :slug: horizon-juno-cycle-features
-:status: draft
 
 This post intends to give an overview on what happened during Horizon's
 Juno development cycle. Horizon's `blueprints page on launchpad`_ lists 31 
