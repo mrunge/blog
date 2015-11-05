@@ -1,11 +1,11 @@
-Testing Horizon git snapshots
-#############################
-:date: 2015-03-11 10:30
+Horizon in Kilo version coming to Fedora 22
+###########################################
+:date: 2015-04-17 10:30
 :author: mrunge
 :category: OpenStack
 :tags: Fedora, OpenStack
-:slug: test-horizon-git
-:Status: published
+:slug: horizon-kilo-fedora22
+:Status: draft
 
 Testing horizon git checkouts
 -----------------------------
@@ -80,7 +80,6 @@ Updating your checkout
 The following snippet will pull in latest changes from git, will copy
 changed static files to the right places and will run your django development
 server.
-
 .. code-block:: bash
 
   git fetch && git pull
