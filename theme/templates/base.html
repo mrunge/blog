@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="{{ HTML_LANG }}">	
+<html lang="{{ HTML_LANG }}">
 <head>
 	<meta charset="utf-8"/>
-	<title>{% block title %}{{ SITENAME }}{%endblock%}</title>	
+	<title>{% block title %}{{ SITENAME }}{%endblock%}</title>
 	<meta name="author" content="{{ AUTHOR }}">
-	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
 	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
-		
+
 	{% block scripts %}
 	{% endblock %}
 
@@ -96,7 +97,7 @@
 
       <footer>
 		<p role="contentinfo">
-		  © 2013 - 2015 {{ AUTHOR }} 
+		  © 2013 - 2016 {{ AUTHOR }} 
     	</p>
 
 	  </footer>	

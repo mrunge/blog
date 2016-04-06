@@ -70,7 +70,7 @@ footer {
   border-top: 1px dotted #D6D6D6;
   line-height: 30px;
   padding: 0 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 
@@ -141,7 +141,7 @@ h1 a {
 /* Texts */
 
 p {
-  margin: 0.8em 0 0.5em;
+  margin: 0.9em 0 0.5em;
 }
 
 a {
@@ -227,7 +227,7 @@ ol.archive li time,
 ol.archive li .tags
  {
   line-height: 140%;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 0;
 }
 
