@@ -5,7 +5,7 @@ Operational Tools in CentOS
 :category: OpenStack
 :tags: OpenStack, CentOS
 :slug: opstools
-:Status: draft
+:Status: published
 
 A while ago, we proposed the `OpsTools SIG`_. Its idea is to
 provide tools for operators, system administrators, etc.
