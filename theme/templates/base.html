@@ -19,7 +19,7 @@
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
     {% endif %}
 </head>
-	
+
 <body>
 {{ FEED_ATOM }}
     <div class="container">
@@ -42,13 +42,13 @@
 	    {% endif %}
 		<a href="{{ SITEURL }}" class="title">{{ SITENAME }}</a>
        </header>
-	
+
 	  <div class="wrapper">
 
 		  <div role="main" class="content">
 		    {% block content %}{% endblock %}
-		  </div>	
-		  
+		  </div>
+
 		  <div class="sidebar">
 
 	        <div class="widget">
@@ -97,7 +97,12 @@
 
       <footer>
 		<p role="contentinfo">
-		  © 2013 - 2016 {{ AUTHOR }} 
+        <div>
+		  © 2013 - 2016 {{ AUTHOR }}
+        </div>
+        <div>
+            <a href="http://matthias-runge.de/pages/datenschutzerklarung.html">Datenschutzerklärung</a>
+        </div>
     	</p>
 
 	  </footer>	
