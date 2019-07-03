@@ -18,10 +18,13 @@ to have the necessary repositories enabled
 
 .. code:: bash
 
-    subscribtion-manager repos enable amq-interconnect-1-for-rhel-7-server-rpms \
-       rhel-7-server-extras-rpms rhel-7-server-ose-3.11-rpms \
-       rhel-7-server-optional-rpms rhel-7-server-openstack-14-rpms \
-       rhel-7-server-openstack-14-optools-rpms rhel-7-server-rpms
+    subscribtion-manager repos --enabler=amq-interconnect-1-for-rhel-7-server-rpms \
+       --enable=rhel-7-server-extras-rpms \
+       --enable=rhel-7-server-ose-3.11-rpms \
+       --enable=rhel-7-server-optional-rpms \
+       --enable=rhel-7-server-openstack-14-rpms \
+       --enable=rhel-7-server-openstack-14-optools-rpms \
+       --enable=rhel-7-server-rpms
 
 
 As usual, do a ``yum -y update``.
@@ -59,11 +62,27 @@ Now it's time to enable dcoker daemon
     systemctl ensable docker
 
 
-Now please reboot your machine and then run
+Pulling images from Red Hat Service Registry requires authorization.
+Log into the `container registry`_ generate a token and download the
+docker configuration JSON file. That needs to be saved (as described
+there under `~/.docker/config.json`.
+
+Now please reboot your machine. Apparently, there is an `issue in
+oc cluster`_, which we are we going to use. That requires a
+workaround:
+
 
 .. code:: bash
 
-    oc cluster up --public-hostname=$(hostname)
+    mkdir /var/lib/minishift
+    mount --bind --make-rshared /var/lib/minishift/ /var/lib/minishift
+
+
+and then finally, we can get OpsnShift up and running:
+
+.. code:: bash
+
+    oc cluster up --public-hostname=$(hostname) --base-dir /var/lib/minishift
 
 That should finish successfully after a short time. Then, if you haven't done so far
 
@@ -110,3 +129,4 @@ Press ctrl+c once the prometheus-operator is marked as running.
 
 .. _`Service Assurance Framework`: https://telemetry-framework.readthedocs.io/en/master/
 .. _`container registry`: https://access.redhat.com/terms-based-registry/#/accounts
+.. _`issue in oc cluster`: https://github.com/openshift/origin/issues/21404
