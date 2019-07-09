@@ -1,11 +1,11 @@
 Service Assurance on small OpenShift Cluster
 ############################################
-:date: 2019-07-01 13:40
+:date: 2019-07-09 16:50
 :author: mrunge
 :category: metrics
 :tags: metrics, OpenShift
 :slug: Service-Assurance-on-ocp
-:Status: draft
+:Status: Published
 
 This article is intended to give an overview on how to test the
 `Service Assurance Framework`_ on a small deployment of OpenShift.
