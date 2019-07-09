@@ -18,7 +18,7 @@ to have the necessary repositories enabled
 
 .. code:: bash
 
-    subscribtion-manager repos --enabler=amq-interconnect-1-for-rhel-7-server-rpms \
+    subscribtion-manager repos --enable=amq-interconnect-1-for-rhel-7-server-rpms \
        --enable=rhel-7-server-extras-rpms \
        --enable=rhel-7-server-ose-3.11-rpms \
        --enable=rhel-7-server-optional-rpms \
@@ -55,21 +55,20 @@ and make it read:
       "bip":"172.30.0.1/24"
     }
 
-Now it's time to enable dcoker daemon
+Now it's time to enable docker daemon
 
 .. code:: bash
 
-    systemctl ensable docker
+    systemctl enable docker
 
 
 Pulling images from Red Hat Service Registry requires authorization.
-Log into the `container registry`_ generate a token and download the
+Log into the `container registry`_ to generate a token and download the
 docker configuration JSON file. That needs to be saved (as described
 there under `~/.docker/config.json`.
 
 Now please reboot your machine. Apparently, there is an `issue in
-oc cluster`_, which we are we going to use. That requires a
-workaround:
+oc cluster`_, which requires a workaround:
 
 
 .. code:: bash
